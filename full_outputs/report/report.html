@@ -1,0 +1,146 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><title>Environmental Quality Report</title><style>body{font-family:Arial,Helvetica,sans-serif;margin:24px;}table{border-collapse:collapse;margin:12px 0;}td,th{border:1px solid #ccc;padding:6px 8px;}h2{margin-top:28px;}pre{background:#f7f7f7;padding:12px;white-space:pre-wrap;}</style></head><body><h1>Environmental Quality Report</h1><h2>Summary (EDA)</h2><pre>=== BASIC INFO ===
+Rows: 3000  Cols: 24
+Columns: [&#x27;PM2.5 (µg/m³)&#x27;, &#x27;PM10 (µg/m³)&#x27;, &#x27;NO2 (µg/m³)&#x27;, &#x27;SO2 (µg/m³)&#x27;, &#x27;CO (mg/m³)&#x27;, &#x27;O3 (µg/m³)&#x27;, &#x27;Temperature (°C)&#x27;, &#x27;Humidity (%)&#x27;, &#x27;Wind Speed (m/s)&#x27;, &#x27;Wind Direction (°)&#x27;, &#x27;Pressure (hPa)&#x27;, &#x27;Precipitation (mm)&#x27;, &#x27;Visibility (km)&#x27;, &#x27;AQI&#x27;, &#x27;Season&#x27;, &#x27;City&#x27;, &#x27;Latitude&#x27;, &#x27;Longitude&#x27;, &#x27;Day of Week&#x27;, &#x27;Hour&#x27;, &#x27;Month&#x27;, &#x27;Year&#x27;, &#x27;Weather Condition&#x27;, &#x27;Station ID&#x27;]
+
+=== MISSING VALUES PER COLUMN ===
+PM2.5 (µg/m³)         0
+PM10 (µg/m³)          0
+NO2 (µg/m³)           0
+SO2 (µg/m³)           0
+CO (mg/m³)            0
+O3 (µg/m³)            0
+Temperature (°C)      0
+Humidity (%)          0
+Wind Speed (m/s)      0
+Wind Direction (°)    0
+Pressure (hPa)        0
+Precipitation (mm)    0
+Visibility (km)       0
+AQI                   0
+Season                0
+City                  0
+Latitude              0
+Longitude             0
+Day of Week           0
+Hour                  0
+Month                 0
+Year                  0
+Weather Condition     0
+Station ID            0
+
+=== COORDINATE BOUNDS CHECK (China bbox) ===
+Outside bbox count: 0 (0.00%)
+Latitude range: 20.0050 to 49.9989
+Longitude range: 90.0065 to 129.9893
+
+=== TOP 10 CITIES BY ROW COUNT ===
+City
+Beijing      629
+Chengdu      598
+Shanghai     596
+Shenzhen     593
+Guangzhou    584
+
+=== TIME COVERAGE ===
+Year: unique=10 sample=[np.int64(2015), np.int64(2016), np.int64(2017), np.int64(2018), np.int64(2019), np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023), np.int64(2024)]
+Month: unique=12 sample=[np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10)]
+Hour: unique=24 sample=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+Season: unique=4 sample=[&#x27;Autumn&#x27;, &#x27;Spring&#x27;, &#x27;Summer&#x27;, &#x27;Winter&#x27;]
+Day of Week: unique=7 sample=[&#x27;Friday&#x27;, &#x27;Monday&#x27;, &#x27;Saturday&#x27;, &#x27;Sunday&#x27;, &#x27;Thursday&#x27;, &#x27;Tuesday&#x27;, &#x27;Wednesday&#x27;]
+
+=== POLLUTANT SUMMARY (count, mean, p50, p95, min, max) ===
+PM2.5 (µg/m³): count=3000, mean=130.073, p50=128.858, p95=237.605, min=10.039, max=249.847
+PM10 (µg/m³): count=3000, mean=158.818, p50=157.175, p95=285.707, min=20.017, max=299.702
+NO2 (µg/m³): count=3000, mean=52.949, p50=53.405, p95=94.482, min=5.005, max=99.980
+SO2 (µg/m³): count=3000, mean=25.426, p50=25.677, p95=47.359, min=1.015, max=49.990
+CO (mg/m³): count=3000, mean=2.563, p50=2.554, p95=4.746, min=0.102, max=4.999
+O3 (µg/m³): count=3000, mean=105.613, p50=106.706, p95=190.024, min=10.095, max=199.936
+
+=== PM2.5 EXCEEDANCES &gt; 150.0 ===
+Count: 1238  Share: 41.27%
+
+Top 5 cities by exceedances:
+City
+Shanghai     257
+Chengdu      257
+Beijing      248
+Guangzhou    242
+Shenzhen     234
+
+Exceedances by Season:
+Season
+Spring    356
+Summer    299
+Winter    298
+Autumn    285
+
+Top hours by exceedance count:
+Hour
+13    64
+11    62
+0     61
+22    58
+8     57
+1     57
+9     55
+12    55
+6     54
+3     54
+
+=== PM2.5 TEMPORAL AVERAGES ===
+By Season (mean):
+Season
+Spring    137.01
+Winter    129.05
+Autumn    128.16
+Summer    125.74
+
+By Hour (mean):
+Hour
+22    144.90
+13    142.50
+11    140.32
+0     138.12
+10    136.19
+19    134.44
+7     133.15
+12    131.95
+8     131.80
+3     130.70
+
+By Month (mean):
+Month
+1     123.24
+2     135.30
+3     130.23
+4     127.09
+5     127.45
+6     133.96
+7     132.96
+8     133.82
+9     128.15
+10    130.38
+11    133.26
+12    124.25
+
+By Year (mean):
+Year
+2015    129.77
+2016    126.84
+2017    133.34
+2018    130.81
+2019    128.38
+2020    133.20
+2021    123.98
+2022    131.76
+2023    131.97
+2024    129.91
+
+=== SPEARMAN CORRELATION (pollutants) ===
+               PM2.5 (µg/m³)  PM10 (µg/m³)  NO2 (µg/m³)  SO2 (µg/m³)  CO (mg/m³)  O3 (µg/m³)
+PM2.5 (µg/m³)           1.00         -0.00         0.01         0.03       -0.01       -0.00
+PM10 (µg/m³)           -0.00          1.00         0.01         0.02       -0.03       -0.01
+NO2 (µg/m³)             0.01          0.01         1.00         0.02       -0.01        0.01
+SO2 (µg/m³)             0.03          0.02         0.02         1.00        0.01        0.01
+CO (mg/m³)             -0.01         -0.03        -0.01         0.01        1.00       -0.01
+O3 (µg/m³)             -0.00         -0.01         0.01         0.01       -0.01        1.00</pre><h2>Pollutant Summary (preview)</h2><table><tr><th>pollutant</th><th>count</th><th>mean</th><th>p50</th><th>p95</th><th>min</th><th>max</th></tr><tr><td>PM2.5 (µg/m³)</td><td>3000</td><td>130.07274240079397</td><td>128.85817222106786</td><td>237.60470091123608</td><td>10.039019416025043</td><td>249.8474730741296</td></tr><tr><td>PM10 (µg/m³)</td><td>3000</td><td>158.81839774077486</td><td>157.17472308785415</td><td>285.7072409176678</td><td>20.017134016581227</td><td>299.70229261089287</td></tr><tr><td>NO2 (µg/m³)</td><td>3000</td><td>52.94869661413674</td><td>53.40487858824613</td><td>94.4817194880738</td><td>5.005046875086433</td><td>99.97951129085968</td></tr><tr><td>SO2 (µg/m³)</td><td>3000</td><td>25.42612660699014</td><td>25.677423364402216</td><td>47.3588555452956</td><td>1.0146934222912058</td><td>49.98985020662516</td></tr><tr><td>CO (mg/m³)</td><td>3000</td><td>2.5625137554572968</td><td>2.5537782720599758</td><td>4.746009712666545</td><td>0.1022070852783529</td><td>4.9986584350286005</td></tr><tr><td>O3 (µg/m³)</td><td>3000</td><td>105.61336529710772</td><td>106.70630226121743</td><td>190.0239273641853</td><td>10.09455149821186</td><td>199.93638695822668</td></tr></table><h2>Alerts (preview)</h2><table><tr><th>City</th><th>Latitude</th><th>Longitude</th><th>Season</th><th>Hour</th><th>Month</th><th>Year</th><th>Station ID</th><th>PM2.5 (µg/m³)</th><th>Severity</th><th>Threshold</th></tr><tr><td>Shanghai</td><td>48.629079983871776</td><td>105.23830183770646</td><td>Spring</td><td>17</td><td>11</td><td>2017</td><td>18</td><td>194.1747895640595</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>40.353740227395505</td><td>99.195909627058</td><td>Spring</td><td>3</td><td>12</td><td>2020</td><td>47</td><td>204.12792850538222</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>25.37284879493256</td><td>112.82186746893433</td><td>Autumn</td><td>4</td><td>8</td><td>2021</td><td>39</td><td>187.23478969579338</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>48.273093098316316</td><td>109.44260439419068</td><td>Spring</td><td>15</td><td>2</td><td>2022</td><td>17</td><td>160.4409812087023</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>28.095013012670883</td><td>106.97246278943412</td><td>Summer</td><td>20</td><td>8</td><td>2022</td><td>96</td><td>164.42763482585485</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>43.59028410981889</td><td>98.31149456022476</td><td>Summer</td><td>20</td><td>5</td><td>2015</td><td>12</td><td>219.3539940376757</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>28.696484829769613</td><td>120.17655989051596</td><td>Winter</td><td>17</td><td>12</td><td>2018</td><td>28</td><td>227.24072653687776</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>38.110244917529656</td><td>129.98928438486476</td><td>Summer</td><td>19</td><td>7</td><td>2017</td><td>32</td><td>205.86197831319862</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>45.062743903057836</td><td>95.43307925372804</td><td>Summer</td><td>22</td><td>12</td><td>2022</td><td>92</td><td>190.40995388137725</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>30.89127140648756</td><td>115.52612235226084</td><td>Spring</td><td>5</td><td>2</td><td>2017</td><td>27</td><td>180.39649408582991</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>24.045612374897956</td><td>91.58944712840317</td><td>Summer</td><td>8</td><td>6</td><td>2016</td><td>36</td><td>190.07566976910482</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>39.98723436461303</td><td>96.9288476965019</td><td>Summer</td><td>5</td><td>10</td><td>2024</td><td>87</td><td>225.41916047768126</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>49.33192263357289</td><td>107.2439836438384</td><td>Winter</td><td>19</td><td>9</td><td>2022</td><td>38</td><td>203.06389558449254</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>31.430294509344225</td><td>124.86994032115626</td><td>Spring</td><td>6</td><td>2</td><td>2024</td><td>17</td><td>167.26447948943442</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>49.99769403840985</td><td>93.25673395484662</td><td>Autumn</td><td>0</td><td>4</td><td>2015</td><td>51</td><td>243.1505614719994</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>34.1376353069701</td><td>97.67730401096613</td><td>Autumn</td><td>16</td><td>9</td><td>2024</td><td>10</td><td>246.35541950198206</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>22.296400855296703</td><td>107.53619888379367</td><td>Winter</td><td>3</td><td>10</td><td>2020</td><td>42</td><td>199.16681073336397</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>37.958693464725144</td><td>112.09564170935549</td><td>Autumn</td><td>7</td><td>11</td><td>2018</td><td>56</td><td>248.47049148521538</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>21.12170438693412</td><td>99.99467561233766</td><td>Winter</td><td>4</td><td>3</td><td>2019</td><td>70</td><td>207.19204835359685</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>28.656509265583615</td><td>125.28817272643889</td><td>Autumn</td><td>22</td><td>7</td><td>2016</td><td>22</td><td>187.33323492966514</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>35.154204531212876</td><td>115.00911804021692</td><td>Summer</td><td>22</td><td>3</td><td>2024</td><td>94</td><td>235.01687231353588</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>48.5914919157556</td><td>118.51397244337953</td><td>Autumn</td><td>5</td><td>7</td><td>2020</td><td>80</td><td>178.47723001196522</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>27.609262680931085</td><td>120.29471250400711</td><td>Spring</td><td>16</td><td>9</td><td>2015</td><td>12</td><td>170.3825051825374</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>38.097940448760525</td><td>124.5474044389681</td><td>Summer</td><td>5</td><td>4</td><td>2023</td><td>28</td><td>158.83605315239876</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>20.415410299068483</td><td>129.08455564506122</td><td>Autumn</td><td>8</td><td>1</td><td>2022</td><td>43</td><td>216.16815307873085</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>37.927293940569754</td><td>127.26844094666316</td><td>Winter</td><td>21</td><td>12</td><td>2017</td><td>27</td><td>216.46575992555734</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>30.699268355343097</td><td>116.05226240166718</td><td>Spring</td><td>15</td><td>12</td><td>2019</td><td>19</td><td>204.21898819146514</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>22.178398049547138</td><td>118.8027719640865</td><td>Summer</td><td>1</td><td>1</td><td>2021</td><td>4</td><td>183.6879725841295</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>27.05507244698385</td><td>115.25312519569937</td><td>Autumn</td><td>6</td><td>11</td><td>2022</td><td>72</td><td>218.4020042585645</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>43.482224442923936</td><td>112.9278390130966</td><td>Autumn</td><td>18</td><td>11</td><td>2019</td><td>93</td><td>216.7564883062043</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>36.455065958024676</td><td>102.75265335129438</td><td>Spring</td><td>2</td><td>1</td><td>2020</td><td>99</td><td>237.6452908537273</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>22.542786077346957</td><td>91.71431414349082</td><td>Summer</td><td>0</td><td>4</td><td>2018</td><td>50</td><td>184.8752032244357</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>24.040870506804787</td><td>114.71324105037966</td><td>Winter</td><td>19</td><td>3</td><td>2018</td><td>43</td><td>157.30886635600544</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>27.879898990786316</td><td>109.92100597736618</td><td>Spring</td><td>11</td><td>5</td><td>2016</td><td>96</td><td>151.17307467542037</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>36.94297372696995</td><td>127.86369880760451</td><td>Summer</td><td>1</td><td>11</td><td>2018</td><td>88</td><td>217.15810783358424</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>47.359001861243875</td><td>112.76424593009905</td><td>Autumn</td><td>3</td><td>3</td><td>2019</td><td>64</td><td>242.4212938708892</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>22.4263561747255</td><td>99.90743500559456</td><td>Winter</td><td>7</td><td>5</td><td>2022</td><td>73</td><td>161.94054452473245</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>27.90393728347228</td><td>115.71683004773251</td><td>Summer</td><td>11</td><td>8</td><td>2019</td><td>89</td><td>150.22962238639232</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>40.157702202814505</td><td>120.39005216060654</td><td>Summer</td><td>22</td><td>1</td><td>2020</td><td>94</td><td>185.0073874610552</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>24.782734575913384</td><td>118.01991082859315</td><td>Summer</td><td>4</td><td>9</td><td>2018</td><td>94</td><td>163.3265240883065</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>25.881204022507287</td><td>127.1860424509778</td><td>Winter</td><td>21</td><td>1</td><td>2024</td><td>30</td><td>237.2203053148448</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>28.984063082352126</td><td>126.44219998749293</td><td>Summer</td><td>0</td><td>3</td><td>2021</td><td>15</td><td>163.50660909708415</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>31.81630614292483</td><td>95.7285647825741</td><td>Winter</td><td>23</td><td>5</td><td>2019</td><td>55</td><td>225.24157579490483</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>23.83340594648749</td><td>91.51781738306373</td><td>Spring</td><td>13</td><td>3</td><td>2016</td><td>56</td><td>164.35574329971607</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>34.76273872980458</td><td>129.80478926817787</td><td>Spring</td><td>13</td><td>6</td><td>2017</td><td>28</td><td>209.81732147913047</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>31.79422439287096</td><td>122.04849888615003</td><td>Winter</td><td>10</td><td>7</td><td>2017</td><td>10</td><td>211.2446311840292</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>27.08729405574129</td><td>126.83087930532494</td><td>Spring</td><td>11</td><td>9</td><td>2020</td><td>49</td><td>202.79213080616</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>38.58692587235198</td><td>128.23452419899553</td><td>Summer</td><td>16</td><td>3</td><td>2017</td><td>26</td><td>158.81951950143753</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>42.544553464187835</td><td>105.97183905158928</td><td>Summer</td><td>5</td><td>3</td><td>2024</td><td>40</td><td>190.41656180803645</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>48.51476763870254</td><td>107.31595072633891</td><td>Winter</td><td>0</td><td>9</td><td>2016</td><td>66</td><td>223.35716552857764</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>45.031042032363146</td><td>116.21070959291517</td><td>Spring</td><td>16</td><td>7</td><td>2016</td><td>3</td><td>228.3474735479857</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>28.94430501110595</td><td>116.57019190604032</td><td>Winter</td><td>17</td><td>2</td><td>2023</td><td>18</td><td>249.8474730741296</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>25.248378347179056</td><td>125.91333616331312</td><td>Summer</td><td>19</td><td>10</td><td>2020</td><td>91</td><td>200.27792232636824</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>42.36764803622084</td><td>100.41387190888693</td><td>Autumn</td><td>14</td><td>10</td><td>2022</td><td>8</td><td>246.96384163459052</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>23.534794542611294</td><td>116.48417225412067</td><td>Spring</td><td>22</td><td>4</td><td>2020</td><td>84</td><td>230.6455838937148</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>37.371034619546734</td><td>126.95241517277002</td><td>Spring</td><td>10</td><td>5</td><td>2018</td><td>34</td><td>191.64818787359349</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>33.232106223136185</td><td>117.95204179664233</td><td>Summer</td><td>21</td><td>11</td><td>2021</td><td>12</td><td>223.04912626019353</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>31.880326742403795</td><td>127.6645211509989</td><td>Winter</td><td>10</td><td>11</td><td>2024</td><td>72</td><td>164.0072404322418</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>43.26371864086636</td><td>113.62745721455573</td><td>Winter</td><td>17</td><td>10</td><td>2024</td><td>98</td><td>170.74058379228765</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>36.03484454705823</td><td>116.43576788210844</td><td>Spring</td><td>20</td><td>9</td><td>2019</td><td>94</td><td>242.5604545074412</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>42.351397484030414</td><td>125.70559212669045</td><td>Summer</td><td>3</td><td>12</td><td>2017</td><td>36</td><td>168.84668724561325</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>39.46883436246283</td><td>94.83455988124804</td><td>Winter</td><td>9</td><td>10</td><td>2024</td><td>59</td><td>212.42225266391412</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>32.12516826839737</td><td>95.60383691109027</td><td>Summer</td><td>22</td><td>7</td><td>2020</td><td>6</td><td>162.34242513917184</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>20.168807971358635</td><td>107.25736030842619</td><td>Summer</td><td>10</td><td>3</td><td>2016</td><td>36</td><td>248.87089076409683</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>20.925385156958143</td><td>113.379628434597</td><td>Winter</td><td>20</td><td>9</td><td>2021</td><td>94</td><td>224.51663981982827</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>30.886465037403784</td><td>92.45866624887877</td><td>Summer</td><td>19</td><td>7</td><td>2022</td><td>30</td><td>166.72035800330838</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>47.42306885114955</td><td>104.91522232035973</td><td>Summer</td><td>20</td><td>12</td><td>2016</td><td>52</td><td>238.28780393400464</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>29.873934077084357</td><td>102.35784258169852</td><td>Winter</td><td>7</td><td>11</td><td>2017</td><td>47</td><td>221.75682090400142</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>26.24761930142823</td><td>108.65175777311487</td><td>Autumn</td><td>7</td><td>5</td><td>2023</td><td>52</td><td>156.08877118432457</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>43.83097572980671</td><td>97.70642849736653</td><td>Winter</td><td>1</td><td>4</td><td>2020</td><td>1</td><td>246.81327157324998</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>31.794732769070627</td><td>115.74779797108954</td><td>Summer</td><td>6</td><td>4</td><td>2017</td><td>62</td><td>155.7518470073778</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>29.16201950937772</td><td>114.52502893727723</td><td>Autumn</td><td>15</td><td>11</td><td>2015</td><td>15</td><td>232.28945636488712</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>25.029190707930166</td><td>93.3420956890063</td><td>Winter</td><td>13</td><td>9</td><td>2020</td><td>73</td><td>190.31717932056034</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>32.36842398447098</td><td>92.08679916348835</td><td>Autumn</td><td>19</td><td>5</td><td>2022</td><td>97</td><td>245.25127757881418</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>22.20623285340604</td><td>95.60446640740393</td><td>Winter</td><td>0</td><td>6</td><td>2018</td><td>99</td><td>209.61249673746622</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>48.16758135696064</td><td>105.29650124314044</td><td>Summer</td><td>8</td><td>8</td><td>2024</td><td>33</td><td>228.02784913624149</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>44.73015018418347</td><td>129.2993198771314</td><td>Spring</td><td>8</td><td>11</td><td>2024</td><td>5</td><td>202.9458013895126</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>48.79217935301828</td><td>122.61530580211031</td><td>Spring</td><td>15</td><td>7</td><td>2017</td><td>95</td><td>196.59548168673368</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>45.62938497044016</td><td>98.34460666016423</td><td>Spring</td><td>4</td><td>7</td><td>2021</td><td>67</td><td>178.86160435966522</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>39.532973648147184</td><td>124.51964396243923</td><td>Summer</td><td>15</td><td>10</td><td>2023</td><td>61</td><td>236.4829965233995</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>21.401307593825546</td><td>90.2567264993762</td><td>Spring</td><td>1</td><td>6</td><td>2024</td><td>33</td><td>191.439087452762</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>37.59266315592572</td><td>121.63844086193586</td><td>Autumn</td><td>18</td><td>8</td><td>2017</td><td>23</td><td>226.68177587534765</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>49.99887261652939</td><td>124.71012642970359</td><td>Winter</td><td>7</td><td>1</td><td>2022</td><td>96</td><td>201.2228989464594</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>28.0505428435016</td><td>102.26624907422739</td><td>Summer</td><td>8</td><td>9</td><td>2015</td><td>77</td><td>155.0746814043786</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>37.67078085879524</td><td>128.18368850388532</td><td>Summer</td><td>9</td><td>8</td><td>2018</td><td>85</td><td>204.20553644331932</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>32.10083772746647</td><td>106.79906286879276</td><td>Winter</td><td>2</td><td>10</td><td>2022</td><td>27</td><td>221.12606766490626</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>35.99407641044536</td><td>102.5735981953528</td><td>Spring</td><td>14</td><td>11</td><td>2019</td><td>73</td><td>245.5588086301127</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>35.204260984339186</td><td>104.08442465873618</td><td>Autumn</td><td>3</td><td>10</td><td>2017</td><td>2</td><td>178.04333852636415</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>24.025038999437133</td><td>115.56727420330847</td><td>Spring</td><td>3</td><td>11</td><td>2020</td><td>86</td><td>204.8197474651104</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>41.28944396749856</td><td>114.1837809518858</td><td>Winter</td><td>10</td><td>4</td><td>2016</td><td>16</td><td>200.18189342115073</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>29.65459940987529</td><td>124.97608118977641</td><td>Spring</td><td>19</td><td>4</td><td>2024</td><td>79</td><td>232.05997510618351</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>24.629279761478514</td><td>102.3209604720104</td><td>Spring</td><td>11</td><td>3</td><td>2024</td><td>51</td><td>249.08974692982997</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>37.61752353801133</td><td>107.2511811159029</td><td>Autumn</td><td>12</td><td>12</td><td>2019</td><td>28</td><td>176.6986450528571</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>20.113413607182036</td><td>105.70761772231404</td><td>Autumn</td><td>9</td><td>10</td><td>2023</td><td>36</td><td>245.20481256018266</td><td>severe</td><td>150.0</td></tr><tr><td>Chengdu</td><td>40.02099164429741</td><td>119.28098409326091</td><td>Winter</td><td>11</td><td>4</td><td>2017</td><td>34</td><td>237.34954813740012</td><td>severe</td><td>150.0</td></tr><tr><td>Shenzhen</td><td>41.1713407089004</td><td>100.40599817348301</td><td>Spring</td><td>9</td><td>6</td><td>2021</td><td>26</td><td>164.39857871657807</td><td>severe</td><td>150.0</td></tr><tr><td>Guangzhou</td><td>37.94299059584394</td><td>90.37025730810807</td><td>Autumn</td><td>8</td><td>10</td><td>2018</td><td>34</td><td>209.71730439340294</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>40.60379491320357</td><td>94.4769657666835</td><td>Autumn</td><td>8</td><td>3</td><td>2018</td><td>7</td><td>235.50375791926763</td><td>severe</td><td>150.0</td></tr><tr><td>Beijing</td><td>44.43764026406161</td><td>94.68153465884305</td><td>Autumn</td><td>11</td><td>8</td><td>2016</td><td>56</td><td>163.79106982413543</td><td>severe</td><td>150.0</td></tr><tr><td>Shanghai</td><td>47.09092874085807</td><td>103.60889669607587</td><td>Winter</td><td>11</td><td>2</td><td>2022</td><td>5</td><td>204.19645007295</td><td>severe</td><td>150.0</td></tr></table><h2>Figures</h2><div style="margin:12px 0"><img src="../maps/pm25_hexbin.png" alt="pm25_hexbin.png" style="max-width:900px;width:100%"/></div><div style="margin:12px 0"><img src="../maps/pm25_city_mean.png" alt="pm25_city_mean.png" style="max-width:900px;width:100%"/></div><div style="margin:12px 0"><img src="../maps/pm25_hotspots.png" alt="pm25_hotspots.png" style="max-width:900px;width:100%"/></div><div style="margin:12px 0"><img src="../maps/pm25_scatter.png" alt="pm25_scatter.png" style="max-width:900px;width:100%"/></div><div style="margin:12px 0"><img src="../figures/pm25_by_year.png" alt="pm25_by_year.png" style="max-width:900px;width:100%"/></div><div style="margin:12px 0"><img src="../figures/pm25_by_hour.png" alt="pm25_by_hour.png" style="max-width:900px;width:100%"/></div><div style="margin:12px 0"><img src="../figures/pm25_by_month.png" alt="pm25_by_month.png" style="max-width:900px;width:100%"/></div><div style="margin:12px 0"><img src="../figures/pm25_by_season.png" alt="pm25_by_season.png" style="max-width:900px;width:100%"/></div></body></html>
