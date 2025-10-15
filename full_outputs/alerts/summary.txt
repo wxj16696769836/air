@@ -1,0 +1,13 @@
+Alerts by city (desc):
+Shanghai: 257
+Chengdu: 257
+Beijing: 248
+Guangzhou: 242
+Shenzhen: 234
+
+Alerts by season (desc):
+Spring: 356
+Summer: 299
+Winter: 298
+Autumn: 285
+

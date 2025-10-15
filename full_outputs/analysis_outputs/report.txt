@@ -1,0 +1,146 @@
+=== BASIC INFO ===
+Rows: 3000  Cols: 24
+Columns: ['PM2.5 (µg/m³)', 'PM10 (µg/m³)', 'NO2 (µg/m³)', 'SO2 (µg/m³)', 'CO (mg/m³)', 'O3 (µg/m³)', 'Temperature (°C)', 'Humidity (%)', 'Wind Speed (m/s)', 'Wind Direction (°)', 'Pressure (hPa)', 'Precipitation (mm)', 'Visibility (km)', 'AQI', 'Season', 'City', 'Latitude', 'Longitude', 'Day of Week', 'Hour', 'Month', 'Year', 'Weather Condition', 'Station ID']
+
+=== MISSING VALUES PER COLUMN ===
+PM2.5 (µg/m³)         0
+PM10 (µg/m³)          0
+NO2 (µg/m³)           0
+SO2 (µg/m³)           0
+CO (mg/m³)            0
+O3 (µg/m³)            0
+Temperature (°C)      0
+Humidity (%)          0
+Wind Speed (m/s)      0
+Wind Direction (°)    0
+Pressure (hPa)        0
+Precipitation (mm)    0
+Visibility (km)       0
+AQI                   0
+Season                0
+City                  0
+Latitude              0
+Longitude             0
+Day of Week           0
+Hour                  0
+Month                 0
+Year                  0
+Weather Condition     0
+Station ID            0
+
+=== COORDINATE BOUNDS CHECK (China bbox) ===
+Outside bbox count: 0 (0.00%)
+Latitude range: 20.0050 to 49.9989
+Longitude range: 90.0065 to 129.9893
+
+=== TOP 10 CITIES BY ROW COUNT ===
+City
+Beijing      629
+Chengdu      598
+Shanghai     596
+Shenzhen     593
+Guangzhou    584
+
+=== TIME COVERAGE ===
+Year: unique=10 sample=[np.int64(2015), np.int64(2016), np.int64(2017), np.int64(2018), np.int64(2019), np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023), np.int64(2024)]
+Month: unique=12 sample=[np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10)]
+Hour: unique=24 sample=[np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+Season: unique=4 sample=['Autumn', 'Spring', 'Summer', 'Winter']
+Day of Week: unique=7 sample=['Friday', 'Monday', 'Saturday', 'Sunday', 'Thursday', 'Tuesday', 'Wednesday']
+
+=== POLLUTANT SUMMARY (count, mean, p50, p95, min, max) ===
+PM2.5 (µg/m³): count=3000, mean=130.073, p50=128.858, p95=237.605, min=10.039, max=249.847
+PM10 (µg/m³): count=3000, mean=158.818, p50=157.175, p95=285.707, min=20.017, max=299.702
+NO2 (µg/m³): count=3000, mean=52.949, p50=53.405, p95=94.482, min=5.005, max=99.980
+SO2 (µg/m³): count=3000, mean=25.426, p50=25.677, p95=47.359, min=1.015, max=49.990
+CO (mg/m³): count=3000, mean=2.563, p50=2.554, p95=4.746, min=0.102, max=4.999
+O3 (µg/m³): count=3000, mean=105.613, p50=106.706, p95=190.024, min=10.095, max=199.936
+
+=== PM2.5 EXCEEDANCES > 150.0 ===
+Count: 1238  Share: 41.27%
+
+Top 5 cities by exceedances:
+City
+Shanghai     257
+Chengdu      257
+Beijing      248
+Guangzhou    242
+Shenzhen     234
+
+Exceedances by Season:
+Season
+Spring    356
+Summer    299
+Winter    298
+Autumn    285
+
+Top hours by exceedance count:
+Hour
+13    64
+11    62
+0     61
+22    58
+8     57
+1     57
+9     55
+12    55
+6     54
+3     54
+
+=== PM2.5 TEMPORAL AVERAGES ===
+By Season (mean):
+Season
+Spring    137.01
+Winter    129.05
+Autumn    128.16
+Summer    125.74
+
+By Hour (mean):
+Hour
+22    144.90
+13    142.50
+11    140.32
+0     138.12
+10    136.19
+19    134.44
+7     133.15
+12    131.95
+8     131.80
+3     130.70
+
+By Month (mean):
+Month
+1     123.24
+2     135.30
+3     130.23
+4     127.09
+5     127.45
+6     133.96
+7     132.96
+8     133.82
+9     128.15
+10    130.38
+11    133.26
+12    124.25
+
+By Year (mean):
+Year
+2015    129.77
+2016    126.84
+2017    133.34
+2018    130.81
+2019    128.38
+2020    133.20
+2021    123.98
+2022    131.76
+2023    131.97
+2024    129.91
+
+=== SPEARMAN CORRELATION (pollutants) ===
+               PM2.5 (µg/m³)  PM10 (µg/m³)  NO2 (µg/m³)  SO2 (µg/m³)  CO (mg/m³)  O3 (µg/m³)
+PM2.5 (µg/m³)           1.00         -0.00         0.01         0.03       -0.01       -0.00
+PM10 (µg/m³)           -0.00          1.00         0.01         0.02       -0.03       -0.01
+NO2 (µg/m³)             0.01          0.01         1.00         0.02       -0.01        0.01
+SO2 (µg/m³)             0.03          0.02         0.02         1.00        0.01        0.01
+CO (mg/m³)             -0.01         -0.03        -0.01         0.01        1.00       -0.01
+O3 (µg/m³)             -0.00         -0.01         0.01         0.01       -0.01        1.00
